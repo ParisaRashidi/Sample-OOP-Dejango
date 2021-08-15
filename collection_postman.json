@@ -1,1 +1,262 @@
-
+{
+	"info": {
+		"_postman_id": "67b7baed-264c-4cbd-83fb-e6b13fbdf4c9",
+		"name": "geocoding_apis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GeocodingProvinceAPI",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "geographic_layer_province_table",
+							"value": "geo_data.ostan",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/geocode/updater/province",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"geocode",
+						"updater",
+						"province"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GeocodingBuildingAPI",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "city_id",
+							"value": "1260",
+							"type": "text"
+						},
+						{
+							"key": "geographic_layer_geo_table",
+							"value": "geo_data.geo",
+							"type": "text"
+						},
+						{
+							"key": "geographic_layer_parcell_table",
+							"value": "geo_data.parcell",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/geocode/updater/building",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"geocode",
+						"updater",
+						"building"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GeocodingCountyAPI",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "geographic_layer_county_table",
+							"value": "geo_data.shahrestan",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/geocode/updater/county",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"geocode",
+						"updater",
+						"county"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GeocodingParishAPI",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "geographic_layer_parish_table",
+							"value": "geo_data.mahalle",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/geocode/updater/parish",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"geocode",
+						"updater",
+						"parish"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GeocodingPartAPI",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "geographic_layer_part_table",
+							"value": "geo_data.joze",
+							"type": "text"
+						},
+						{
+							"key": "geographic_layer_tour_table",
+							"value": "geo_data.gasht",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/geocode/updater/part",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"geocode",
+						"updater",
+						"part"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GeocodingTourAPI",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "geographic_layer_tour_table",
+							"value": "geo_data.gasht",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/geocode/updater/tour",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"geocode",
+						"updater",
+						"tour"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GeocodingZoneAPI",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "geographic_layer_zone_table",
+							"value": "geo_data.zone",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/geocode/updater/zone",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"geocode",
+						"updater",
+						"zone"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
